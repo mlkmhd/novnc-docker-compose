@@ -2,18 +2,18 @@ version: "2"
 
 services:
   consol:
-    image: dorowu/ubuntu-desktop-lxde-vnc
+    image: oldwebtoday/remote-desktop-server
     environment:
       VNC_RESOLUTION: 1360x768
       VNC_PW: 1
       VNC_COL_DEPTH: 32
       VNC_PASSWORD: 1
       ALSADEV: "hw:2,0"
-    volumes:
-      - /dev/shm:/dev/shm
-    devices:
-      - "/dev/snd:/dev/snd"
+    #volumes:
+    #  - /dev/shm:/dev/shm
+    #devices:
+    #  - "/dev/snd:/dev/snd"
     restart: always
-    shm_size: '256m'
+    #shm_size: '256m'
     ports:
-    - 80:80
+    - 6901:6901
