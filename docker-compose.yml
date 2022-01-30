@@ -2,7 +2,7 @@ version: "2"
 
 services:
   consol:
-    image: consol/ubuntu-xfce-vnc
+    image: consol/ubuntu-icewm-vnc
     environment:
       VNC_RESOLUTION: 1360x768
       VNC_PW: 1
