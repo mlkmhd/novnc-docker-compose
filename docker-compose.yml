@@ -8,8 +8,11 @@ services:
       VNC_PW: 1
       VNC_COL_DEPTH: 32
       VNC_PASSWORD: 1
+      ALSADEV: "hw:2,0"
     volumes:
       - /dev/shm:/dev/shm
+    devices:
+      - "/dev/snd:/dev/snd"
     restart: always
     shm_size: '256m'
     ports:
