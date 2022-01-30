@@ -7,5 +7,6 @@ services:
       VNC_RESOLUTION: 1360x768
       VNC_PW: 123456
       VNC_COL_DEPTH: 32
+    restart: always
     ports:
     - 6901:6901
