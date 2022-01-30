@@ -6,7 +6,8 @@ services:
     environment:
       VNC_RESOLUTION: 1360x768
       VNC_PW: 123456
-      VNC_COL_DEPTH: 32
+      VNC_COL_DEPTH: 24
     restart: always
+    shm_size: '256m'
     ports:
     - 6901:6901
