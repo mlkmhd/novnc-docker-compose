@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  consol:
+    image: consol/ubuntu-icewm-vnc
+    environment:
+      VNC_RESOLUTION: 1360x768
+      VNC_PW: 123456
+      VNC_COL_DEPTH: 32
+    ports:
+    - 6901:6901
