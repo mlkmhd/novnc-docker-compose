@@ -2,12 +2,15 @@ version: "2"
 
 services:
   consol:
-    image: consol/ubuntu-icewm-vnc
+    image: dorowu/ubuntu-desktop-lxde-vnc
     environment:
       VNC_RESOLUTION: 1360x768
       VNC_PW: 1
       VNC_COL_DEPTH: 32
+      VNC_PASSWORD: 1
+    volumes:
+      - /dev/shm:/dev/shm
     restart: always
     shm_size: '256m'
     ports:
-    - 6901:6901
+    - 80:80
