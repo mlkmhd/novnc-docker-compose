@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - name: Install Dependencies
+      run: |
+        set -xe
+        env
+        apt update
+        apt install wget -y
