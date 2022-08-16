@@ -13,5 +13,5 @@ jobs:
       run: |
         set -xe
         env
-        apt update
-        apt install wget -y
+        sudo apt update
+        sudo apt install wget -y
